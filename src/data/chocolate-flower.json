@@ -1,0 +1,29 @@
+{
+    "scientificName": "Berlandiera Lyrata",
+    "commonName": "Chocolate Flower",
+    "plantType": "Perennial",
+    "physicalDescription": {
+      "flower": "2 inch yellow, daisy-like",
+      "matureHeight": {
+        "low": 1,
+        "high": 2
+      },
+      "matureSpread": {
+        "low": 1,
+        "high": 2
+      }
+    },
+    "seasonOfInterest": {
+        "beginning": "Late Spring",
+        "end": "Fall"
+    },
+    "soilType": ["Loam", "Sand"],
+    "droughtTolerant": true,
+    "waterNeeds": ["Low", "Average"],
+    "hardinessZone": {
+        "low": 4,
+        "high": 10
+    },
+    "sunNeeds": ["Full Sun"],
+    "attracts": ["Bees, Butterflies, Hummingbirds"]
+}

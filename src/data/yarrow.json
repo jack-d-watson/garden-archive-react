@@ -1,0 +1,35 @@
+{
+    "scientificName": "Achillea Millefolium",
+    "commonName": "Yarrow",
+    "varietyName": "Little Moonshine",
+    "plantType": "Perennial",
+    "physicalDescription": {
+      "flower": "tiny, bright yellow, clusters",
+      "leaf": "fern-like gray green",
+      "matureHeight": {
+        "low": 1,
+        "high": 2
+      },
+      "matureSpread": {
+        "low": 1,
+        "high": 2
+      }
+    },
+    "seasonOfInterest": {
+        "beginning": "Early Summer",
+        "end": "Fall"
+    },
+    "soilType": ["Chalk", "Loam", "Sand"],
+    "droughtTolerant": true,
+    "waterNeeds": ["Low", "Average"],
+    "hardinessZone": {
+        "low": 4,
+        "high": 8
+    },
+    "heatZone": {
+        "low": 1,
+        "high": 8
+    },
+    "sunNeeds": ["High"],
+    "attracts": ["Bees", "Butterflies"]
+}

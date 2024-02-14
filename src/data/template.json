@@ -1,0 +1,43 @@
+{
+    "scientificName": "string",
+    "commonName": "string",
+    "varietyName": "string",
+    "plantType": "PlantType",
+    "physicalDescription": {
+      "flower": "string",
+      "leaf": "string",
+      "matureHeight": {
+        "low": 0,
+        "high": 0
+      },
+      "matureSpread": {
+        "low": 0,
+        "high": 0
+      }
+    },
+    "seasonOfInterest": {
+        "beginning": "SeasonSegment",
+        "end": "SeasonSegment"
+    },
+    "soilType": ["SoilType"],
+    "droughtTolerant": false,
+    "waterNeeds": ["NeedLevel"],
+    "hardinessZone": {
+        "low": 0,
+        "high": 0
+    },
+    "heatZone": {
+        "low": 0,
+        "high": 0
+    },
+    "sunNeeds": ["NeedLevel"],
+    "attracts": ["AttractableWildlife"],
+    "photos": [
+      {
+        "caption": "string",
+        "creditLine": "string?",
+        "stageOfLife": "Sprout, Seedling, Vegetative, Reproductive, Senesence",
+        "uri": "string"
+      }
+    ]
+}
