@@ -24,8 +24,8 @@ export default function PlantPhotoBox(props: { plantPhotos: PlantPhoto[] }) {
             <div key={index}>
               <Button
                 onClick={onPhotoButtonClick(setIndex, index)}
-                buttonType="neutral"
-                className={"" + (activePlantIndex === index ? " btn-active" : "")}
+                buttonType="ghost"
+                className={"underline" + (activePlantIndex === index ? " btn-active" : "")}
               >
                 {plantPhoto.stageOfLife}
               </Button>

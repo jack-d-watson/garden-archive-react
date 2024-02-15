@@ -8,10 +8,17 @@ const config: Config = {
   ],
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["emerald"]
+    themes: ["emerald"],
   },
-  safelist: [{
-    pattern: /(badge)-(neutral|primary|secondary|accent|ghost|info|success|warning|error|outline|lg|md|sm|xs)/
-  }]
+  safelist: [
+    {
+      pattern:
+        /(badge)-(neutral|primary|secondary|accent|ghost|info|success|warning|error|outline|lg|md|sm|xs)/,
+    },
+    {
+      pattern:
+        /(btn)-(neutral|primary|secondary|accent|info|success|warning|error|ghost|link)/,
+    },
+  ],
 };
 export default config;

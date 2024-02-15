@@ -30,6 +30,7 @@ export default function Button(props: {
       className={
         `btn ` +
         getButtonTypeClass(props.buttonType) +
+        " " +
         (props.className && props.className)
       }
       onClick={props.onClick}
