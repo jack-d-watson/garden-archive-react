@@ -1,35 +1,68 @@
 {
-    "scientificName": "Achillea Millefolium",
-    "commonName": "Yarrow",
-    "varietyName": "Little Moonshine",
-    "plantType": "Perennial",
-    "physicalDescription": {
-      "flower": "tiny, bright yellow, clusters",
-      "leaf": "fern-like gray green",
-      "matureHeight": {
-        "low": 1,
-        "high": 2
-      },
-      "matureSpread": {
-        "low": 1,
-        "high": 2
-      }
+  "scientificName": "Achillea Millefolium",
+  "commonName": "Yarrow",
+  "varietyName": "Little Moonshine",
+  "plantType": "Perennial",
+  "physicalDescription": {
+    "flower": "tiny, bright yellow, clusters",
+    "leaf": "fern-like gray green",
+    "matureHeight": {
+      "low": 1,
+      "high": 2
     },
-    "seasonOfInterest": {
-        "beginning": "Early Summer",
-        "end": "Fall"
+    "matureSpread": {
+      "low": 1,
+      "high": 2
+    }
+  },
+  "seasonOfInterest": {
+    "beginning": "Early Summer",
+    "end": "Fall"
+  },
+  "soilType": [
+    "Chalk",
+    "Loam",
+    "Sand"
+  ],
+  "droughtTolerant": true,
+  "waterNeeds": [
+    "Low",
+    "Average"
+  ],
+  "hardinessZone": {
+    "low": 4,
+    "high": 8
+  },
+  "heatZone": {
+    "low": 1,
+    "high": 8
+  },
+  "sunNeeds": [
+    "High"
+  ],
+  "attracts": [
+    "Bees",
+    "Butterflies"
+  ],
+  "photos": [
+    {
+      "caption": "A tray of Yarrow seedlings",
+      "creditLine": "Maksims Grigorjevs / max5555",
+      "altText": "Half a dozen yarrow seedlings on a seedling tray. Each seedling has 3 or 4 light green leaves at most an inch tall",
+      "stageOfLife": "Seedling",
+      "uri": "/yarrow-seedling.jpeg"
     },
-    "soilType": ["Chalk", "Loam", "Sand"],
-    "droughtTolerant": true,
-    "waterNeeds": ["Low", "Average"],
-    "hardinessZone": {
-        "low": 4,
-        "high": 8
+    {
+      "caption": "A bushy and mostly established Yarrow from the garden",
+      "altText": "A wide, bushy, and unruley yarrow plant fills the center of the photo. It has dozens long stems coming from the center of the plant, with small dark and light green leaves along the length of each stem",
+      "stageOfLife": "Vegetative",
+      "uri": "/yarrow-vegetative.jpg"
     },
-    "heatZone": {
-        "low": 1,
-        "high": 8
-    },
-    "sunNeeds": ["High"],
-    "attracts": ["Bees", "Butterflies"]
+    {
+      "caption": "A 'Paprika' Yarrow in bloom. The white and pink buds are flowers that are still growing.",
+      "altText": "A yarrow plant with crimson red flowers in bloom. There are many clusters of these flowers in full bloom. Some flower clusters are just white and pink buds",
+      "stageOfLife": "Reproductive",
+      "uri": "/yarrow-reproductive.jpg"
+    }
+  ]
 }

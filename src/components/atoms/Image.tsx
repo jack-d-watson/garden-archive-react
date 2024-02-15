@@ -4,6 +4,7 @@ export default function Image(props: {
   src: string;
   className?: string;
   altText: string;
+  priority?: boolean
 }) {
   return (
     <NextImage
@@ -12,6 +13,7 @@ export default function Image(props: {
       className={props.className}
       width={1000}
       height={1000}
+      priority={props.priority ? props.priority : false}
     />
   );
 }

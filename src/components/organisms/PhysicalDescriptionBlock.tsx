@@ -9,7 +9,7 @@ export default function PhysicalDescriptionBlock(props: {
 }) {
   return (
     <div className={props.className ? props.className : ""}>
-      <Heading type={HeadingType.SectionHeader} className="pt-4">
+      <Heading type={HeadingType.SectionHeader} className="">
         Physical Characteristics
       </Heading>
       <BodyCopy>The following can be used to identify this plant in the wild.</BodyCopy>

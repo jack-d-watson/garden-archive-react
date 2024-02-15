@@ -1,6 +1,7 @@
 import PageTitle from "@/components/molecules/PageTitle";
 import PhysicalDescriptionBlock from "@/components/organisms/PhysicalDescriptionBlock";
 import PlantData from "@/components/organisms/PlantData";
+import PlantPhotoBox from "@/components/organisms/PlantPhotoBox";
 import { PlantCharacteristics } from "@/types/PlantCharacteristics";
 
 async function getData(
@@ -22,7 +23,7 @@ export default async function PlantSlug({
 }: {
   params: { slug: string };
 }) {
-  console.log(params.slug);
+  console.log(`User visited /plants/${params.slug}`);
   let plantData = await getData(params.slug);
   plantData;
   return (
@@ -31,14 +32,16 @@ export default async function PlantSlug({
         title={plantData.commonName + " - " + plantData.scientificName}
         subtitle={plantData.varietyName}
       />
-      <div className="grid grid-cols-2">
-        <div className="">
+      <div className="grid grid-cols-2 py-4">
+        <div className="" id="plantInfo">
           <PhysicalDescriptionBlock
             physicalDescriptions={plantData.physicalDescription}
           />
           <PlantData plantData={plantData} />
         </div>
-        <div className="">photo stuff</div>
+        <div className="" id="plantPhotos">
+          {plantData.photos && <PlantPhotoBox plantPhotos={plantData.photos} />}
+        </div>
       </div>
     </div>
   );

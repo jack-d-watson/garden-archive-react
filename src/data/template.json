@@ -35,6 +35,7 @@
     "photos": [
       {
         "caption": "string",
+        "altText": "string",
         "creditLine": "string?",
         "stageOfLife": "Sprout, Seedling, Vegetative, Reproductive, Senesence",
         "uri": "string"

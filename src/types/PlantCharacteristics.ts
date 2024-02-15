@@ -56,6 +56,7 @@ export type PhysicalDescription = {
 export type StageOfLife = "Sprout" | "Seedling" | "Vegetative" | "Reproductive" | "Senesence"
 export type PlantPhoto = {
   caption: string;
+  altText: string;
   creditLine?: string;
   stageOfLife: StageOfLife,
   uri: string;
