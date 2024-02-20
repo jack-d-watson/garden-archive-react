@@ -6,11 +6,11 @@
     "physicalDescription": {
       "flower": "string",
       "leaf": "string",
-      "matureHeight": {
+      "height": {
         "low": 0,
         "high": 0
       },
-      "matureSpread": {
+      "spread": {
         "low": 0,
         "high": 0
       }

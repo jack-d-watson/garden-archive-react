@@ -51,26 +51,36 @@ export type AttractableWildlife =
 export type PhysicalDescription = {
   flower?: string;
   leaf?: string;
+  height: {
+    low: number;
+    high: number;
+  };
+  spread: {
+    low: number;
+    high: number;
+  };
 };
 
-export type StageOfLife = "Sprout" | "Seedling" | "Vegetative" | "Reproductive" | "Senesence"
+export type StageOfLife =
+  | "Sprout"
+  | "Seedling"
+  | "Vegetative"
+  | "Reproductive"
+  | "Senesence";
 export type PlantPhoto = {
   caption: string;
   altText: string;
   creditLine?: string;
-  stageOfLife: StageOfLife,
+  stageOfLife: StageOfLife;
   uri: string;
-}
+};
 
 export type PlantCharacteristics = {
   scientificName: string;
   commonName: string;
   varietyName?: string;
   plantType: PlantType;
-  physicalDescription: {
-    flower?: string;
-    leaf?: string;
-  };
+  physicalDescription: PhysicalDescription;
   matureHeight: NumericRange;
   matureSpread: NumericRange;
   seasonOfInterest: SeasonOfInterest;

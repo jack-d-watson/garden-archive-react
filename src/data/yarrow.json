@@ -6,11 +6,11 @@
   "physicalDescription": {
     "flower": "tiny, bright yellow, clusters",
     "leaf": "fern-like gray green",
-    "matureHeight": {
+    "height": {
       "low": 1,
       "high": 2
     },
-    "matureSpread": {
+    "spread": {
       "low": 1,
       "high": 2
     }

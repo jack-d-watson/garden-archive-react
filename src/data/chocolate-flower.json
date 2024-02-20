@@ -4,11 +4,11 @@
     "plantType": "Perennial",
     "physicalDescription": {
       "flower": "2 inch yellow, daisy-like",
-      "matureHeight": {
+      "height": {
         "low": 1,
         "high": 2
       },
-      "matureSpread": {
+      "spread": {
         "low": 1,
         "high": 2
       }
