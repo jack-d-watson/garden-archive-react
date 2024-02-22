@@ -7,7 +7,7 @@ export default function MainNav() {
       <div className="navbar-start">
         <ul className="menu menu-horizontal">
           <li className="px-1">
-            <MenuButton destination="/"><Icon name="home" /></MenuButton>
+            <MenuButton destination="/"><Icon name="Home" /></MenuButton>
           </li>
           <li className="px-1">
             <MenuButton destination="/plants">Plants</MenuButton>

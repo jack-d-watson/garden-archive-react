@@ -1,6 +1,6 @@
 import Heading, { HeadingType } from "@/components/atoms/Heading";
 import LinkList, { LinkItem } from "@/components/molecules/LinkList";
-import { PlantSummary } from "@/data/plantsDatabase";
+import { PlantSummary, getPlantList } from "@/data/plantsDatabase";
 
 function getPlantLabel(
   commonName: string,
@@ -16,13 +16,13 @@ function getPlantLabel(
 }
 
 async function getData(): Promise<LinkItem[]> {
-  const res = await fetch("http://localhost:3000/api/plants");
+  // const res = await fetch("http://localhost:3000/api/plants");
+  const plantList = await getPlantList()
+  // if (!res.ok) {
+  //   throw new Error("Could not get data from /api/plants");
+  // }
 
-  if (!res.ok) {
-    throw new Error("Could not get data from /api/plants");
-  }
-
-  const plantList: PlantSummary[] = await res.json();
+  // const plantList: PlantSummary[] = await res.json();
 
   const plantListArray: LinkItem[] = [];
   plantList.map((plantSummary) => {

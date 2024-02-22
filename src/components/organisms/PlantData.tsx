@@ -34,7 +34,6 @@ function getSeasonComponent(seasonsOfInterest: SeasonOfInterest) {
 
 export default function PlantData(props: { plantData: PlantCharacteristics }) {
   const { plantData } = props;
-
   return (
     <div>
       <Heading type={HeadingType.SectionHeader} className="pt-4">

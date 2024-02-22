@@ -16,7 +16,7 @@ export function decorateSeason(
       return {
         value: season,
         icon: {
-          name: "flower-2",
+          name: "Flower",
           color: "black",
           size: "16px",
         },
@@ -31,7 +31,7 @@ export function decorateSeason(
       return {
         value: season,
         icon: {
-          name: "sun",
+          name: "Sun",
           color: "black",
           size: "16px",
         },
@@ -44,7 +44,7 @@ export function decorateSeason(
       return {
         value: season,
         icon: {
-          name: "leaf",
+          name: "Leaf",
           color: "black",
           size: "16px",
         },
@@ -57,7 +57,7 @@ export function decorateSeason(
       return {
         value: season,
         icon: {
-          name: "snowflake",
+          name: "Snowflake",
           color: "black",
           size: "16px",
         },
@@ -70,7 +70,7 @@ export function decorateSeason(
       return {
         value: season,
         icon: {
-          name: "calendar-fold",
+          name: "CalendarFold",
           color: "black",
           size: "16px",
         },
@@ -118,7 +118,7 @@ export function decorateSunNeeds(sunNeeds: NeedLevel[]): FieldValue[] {
             outline: false,
           },
           icon: {
-            name: "cloud",
+            name: "Cloud",
             color: "white",
             size: "16px"
           }
@@ -132,7 +132,7 @@ export function decorateSunNeeds(sunNeeds: NeedLevel[]): FieldValue[] {
             outline: false,
           },
           icon: {
-            name: "cloud-sun",
+            name: "CloudSun",
             color: "black",
             size: "16px"
           }
@@ -146,7 +146,7 @@ export function decorateSunNeeds(sunNeeds: NeedLevel[]): FieldValue[] {
             outline: true,
           },
           icon: {
-            name: "sun-dim",
+            name: "SunDim",
             color: "black",
             size: "16px"
           }
@@ -169,7 +169,7 @@ export function decorateWaterNeeds(waterNeeds: NeedLevel[]): FieldValue[] {
             outline: true,
           },
           icon: {
-            name: "haze",
+            name: "Haze",
             color: "black",
             size: "16px"
           }
@@ -183,7 +183,7 @@ export function decorateWaterNeeds(waterNeeds: NeedLevel[]): FieldValue[] {
             outline: true,
           },
           icon: {
-            name: "droplet",
+            name: "Droplet",
             color: "black",
             size: "16px"
           }
@@ -197,7 +197,7 @@ export function decorateWaterNeeds(waterNeeds: NeedLevel[]): FieldValue[] {
             outline: true,
           },
           icon: {
-            name: "droplets",
+            name: "Droplets",
             color: "black",
             size: "16px"
           }
@@ -223,7 +223,7 @@ export function decorateAttractableWildlife(
             outline: true,
           },
           icon: {
-            name: "hexagon",
+            name: "Hexagon",
             color: "black",
             size: "16px"
           }
@@ -237,7 +237,7 @@ export function decorateAttractableWildlife(
             outline: true,
           },
           icon: {
-            name: "egg",
+            name: "Egg",
             color: "black",
             size: "16px"
           }
@@ -251,7 +251,7 @@ export function decorateAttractableWildlife(
             outline: true,
           },
           icon: {
-            name: "bug",
+            name: "Bug",
             color: "black",
             size: "16px"
           }
@@ -265,7 +265,7 @@ export function decorateAttractableWildlife(
             outline: true,
           },
           icon: {
-            name: "bird",
+            name: "Bird",
             color: "black",
             size: "16px"
           }

@@ -7,7 +7,6 @@ export type LinkItem = {
 };
 
 export default function LinkList(props: { data: LinkItem[] }) {
-    console.log(JSON.stringify(props.data))
   return (
     <ul className="list-disc list-inside">
       {props.data.map((linkItem) => (
