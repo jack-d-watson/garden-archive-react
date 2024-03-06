@@ -3,29 +3,36 @@ import {
   SeasonOfInterest,
 } from "@/types/PlantCharacteristics";
 import Heading, { HeadingType } from "../atoms/Heading";
-import { isStringObject } from "util/types";
 import LabelledField from "../molecules/LabelledField";
-import { decorateAttractableWildlife, decorateSeason, decorateSoilType, decorateSunNeeds, decorateWaterNeeds, decorateZone } from "@/utils/decoratePlantData";
+import {
+  decorateAttractableWildlife,
+  decorateSeason,
+  decorateSoilType,
+  decorateSunNeeds,
+  decorateWaterNeeds,
+  decorateZone,
+} from "@/utils/decoratePlantData";
+import { isStringObject } from "util/types";
 
 function getSeasonComponent(seasonsOfInterest: SeasonOfInterest) {
   const fieldKey = "season";
   const label = "Season of Interest";
-  if (isStringObject(seasonsOfInterest)) {
+  if (typeof seasonsOfInterest === "string") {
     <LabelledField
       id={fieldKey}
       label={label}
       fieldData={[decorateSeason(seasonsOfInterest)]}
     />;
   } else {
-    const start = decorateSeason(seasonsOfInterest.beginning)
-    const end = decorateSeason(seasonsOfInterest.end)
+    const start = decorateSeason(seasonsOfInterest.beginning);
+    const end = decorateSeason(seasonsOfInterest.end);
     return (
       <LabelledField
         id="season"
         label={label}
         fieldData={{
           start,
-          end
+          end,
         }}
       />
     );

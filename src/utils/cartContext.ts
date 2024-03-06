@@ -1,19 +1,27 @@
-import { Cart, CartItem } from "@/types/Cart";
-import { createContext } from "react";
+import { Cart } from "@/types/Cart";
+import { Dispatch, createContext } from "react";
+import { CartDispatchAction } from "./cartReducer";
 
-let itemArr: CartItem[] = []
+export const defaultCart: Cart = {
+  items: [
+    {
+      plantLabel: "Chocolate Daisy",
+      quantity: 2,
+      plantId: "berlandiera-lyrata",
+      href: "/plants/berlandiera-lyrata",
+      spreadPerPlant: 1.5,
+    },
+    {
+      plantLabel: "Yarrow",
+      quantity: 4,
+      plantId: "achillea-millefolium",
+      href: "/plants/achillea-millefolium",
+      spreadPerPlant: 1.5,
+    },
+  ],
+  targetTotalArea: 0,
+  totalArea: 9,
+};
 
-export type CartContextType = {
-    items: CartItem[],
-    addItem: (item: CartItem) => {},
-    removeItem: (itemId: string) => {},
-    updateItem: (itemId: string, updatedItem: CartItem) => {},
-    getItem: (cart: Cart, itemId: string) => CartItem
-}
-
-export const CartContext = createContext({
-    items: itemArr,
-    addItem: (item: CartItem) => {},
-    removeItem: (itemId: string) => {},
-    updateItem: (itemId: string, updatedItem: CartItem) => {}
-});
+export const CartContext = createContext<Cart>(defaultCart);
+export const CartDispatchContext = createContext<Dispatch<CartDispatchAction>>(() => {})
